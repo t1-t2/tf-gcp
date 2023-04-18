@@ -1,4 +1,8 @@
 terraform {
+  backend "gcs" {
+    bucket = var.backend_bucket
+    prefix = "terraform/state"
+  }
   required_providers {
     google = {
       source  = "hashicorp/google"
@@ -8,7 +12,7 @@ terraform {
 }
 
 provider "google" {
-  project     = var.project
-  region      = var.region
-  zone        = var.zone
+  project = var.project
+  region  = var.region
+  zone    = var.zone
 }

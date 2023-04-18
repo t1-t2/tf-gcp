@@ -1,5 +1,6 @@
 variable "project" {
   type = string
+  default = "gd-gcp-gridu-devops-t1-t2"
 }
 
 variable "region" {
@@ -8,4 +9,8 @@ variable "region" {
 
 variable "zone" {
   default = "europe-central2-c"
+}
+
+variable "backend_bucket" {
+  default = "nandrusiak-bucket"
 }
