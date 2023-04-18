@@ -10,7 +10,3 @@ variable "region" {
 variable "zone" {
   default = "europe-central2-c"
 }
-
-variable "backend_bucket" {
-  default = "nandrusiak-bucket"
-}

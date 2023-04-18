@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = var.backend_bucket
+    bucket = "nandrusiak-bucket"
     prefix = "terraform/state"
   }
   required_providers {
